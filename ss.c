@@ -21,7 +21,7 @@ int main(int argc, const char * argv[]) {
     for (int t = 0; t < 100; t++)
         FuckNums[t] = 0;
     int cursor = 0;
-    int beginNum = 2, endNum = 100;
+    int beginNum = 100, endNum = 201;
     while(beginNum <= endNum){
         if(isThisAFuckNum(beginNum)){
             FuckNums[cursor] = beginNum;
@@ -36,5 +36,6 @@ int main(int argc, const char * argv[]) {
         if (cursor % 10 == 0)
             printf("\n");
     }
+    printf("\n");
     return 0;
 }
